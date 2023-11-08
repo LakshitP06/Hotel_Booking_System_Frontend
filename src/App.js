@@ -1,18 +1,24 @@
-import {useState} from 'react';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Signup from './components/Signup';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import NavNotLog from './components/NavNotLog';
+import Admin from './components/Admin';
 import Login from './components/Login';
-import Nav from './components/Nav';
+import SignUp from './components/SignUp';
+import Home from './components/Home';
+import HotelList from './components/HotelList';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div class="container">
+    <div>
+      
       <BrowserRouter>
-      <Nav />
+      <NavNotLog />
         <Routes>
-          <Route path="/register" element={<Signup />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/hotellist" element={<HotelList />} />
         </Routes>
       </BrowserRouter>
     </div>

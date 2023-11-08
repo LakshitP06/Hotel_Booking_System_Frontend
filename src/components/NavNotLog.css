@@ -1,0 +1,29 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C2CAC1;
+    color: #555555; /* Set the text color to #555555 */
+    padding: 10px 20px;
+    border-bottom: 1px solid #c3c3c3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif; /* Use the "Poppins" font */
+    font-weight: 600; /* Semi-bold (600) */
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    color: #555555; /* Set the link text color to #555555 */
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
